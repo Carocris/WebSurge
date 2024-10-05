@@ -20,4 +20,4 @@ jobs:
     - name: Deploy to Surge.sh
       env:
         SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-      run: surge --project ./ --domain WebSurge.surge.sh
+      run: surge --project ./source --domain WebSurge.surge.sh
